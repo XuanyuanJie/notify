@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Bundle-Name: Spring OSGi Bundle
+Created-By: 1.5.0_08 (Sun Microsystems Inc.)
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: org.carde.notify.notify-domain
+Include-Resource: src/main/resources
+Bundle-Version: 0.0.1.SNAPSHOT
+

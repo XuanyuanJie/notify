@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="GBK"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+	<bean name="notifyServerConfig"
+		class="org.cadre.notify.domain.config.server.NotifyServerConfig">
+		<property name="master" value="true" />
+		<property name="localInetSocketAddress">
+			<bean class="java.net.InetSocketAddress">
+				<constructor-arg type="int">
+					<value>9988</value>
+				</constructor-arg>
+			</bean>
+		</property>
+	</bean>
+</beans>

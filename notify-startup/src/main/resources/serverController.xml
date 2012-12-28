@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans default-autowire="byName">
+	<bean name="serverController"
+		class="org.cadre.notify.server.assembly.NotifyServerController">
+		<property name="notifyTCPServer" ref="notifyTCPServer" />
+	</bean>
+	<bean name="notifyTCPServer" class="org.cadre.notify.server.NotifyTCPServer">
+		<property name="remotingServer" ref="remotingServer" />
+	</bean>
+	
+	<bean name="remotingServer" class="org.cadre.notify.server.remoting.service.impl.DefaultRemotingServer" />
+</beans>
